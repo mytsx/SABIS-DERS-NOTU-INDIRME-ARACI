@@ -25,7 +25,7 @@ pip install selenium requests webdriver_manager
 ### Kurulum ve Çalıştırma
 
 1. Bu repoyu git clone komutu ile lokal makinanıza kopyalayın veya zip olarak indirip çıkarın.
-2. bilgiler.txt dosyasını oluşturun ve ilk satırına kullanıcı adınızı, ikinci satırına şifrenizi yazın.
+2. bilgiler.txt dosyasını oluşturun ve ilk satırına `kullanıcı adınızı`, ikinci satırına `şifrenizi` yazın.
 3. main.py dosyasını çalıştırın.
 
 ```bash
