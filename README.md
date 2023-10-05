@@ -8,7 +8,9 @@ Bu bölüm, Sabis Otomasyon'un nasıl kurulacağı ve çalıştırılacağı hak
 
 ### Önkoşullar
 
-Bu aracı çalıştırmak için öncelikle aşağıdaki Python kütüphanelerine ihtiyacınız vardır:
+Bu aracı çalıştırmak için öncelikle Python'ın bilgisayarınıza yüklü olması gerekmektedir. Eğer Python yüklü değilse, [Python resmi web sitesi](https://www.python.org/downloads/) üzerinden indirip kurabilirsiniz. Kurulum sırasında `PATH`'e Python eklemeyi unutmayın.
+
+Daha sonra, aşağıdaki Python kütüphanelerine ihtiyacınız vardır:
 
 - `selenium`
 - `requests`
@@ -41,8 +43,10 @@ Bu araç Sabis sınıfı üzerinde çalışır. Temelde, belirtilen kullanıcı 
  - download_file: Belirli bir dosyanın URL'sini kullanarak dosyayı indirir.
  - close_browser: Tarayıcıyı kapatır.
 
- Veritabanı işlevselliği, SQLite3 üzerinde kurulmuştur. İndirilen dosyaları ve onların meta verilerini takip etmek için kullanılır.
+### Veritabanı İşlevselliği
+
+Sabis Otomasyon aracı, indirilen dosyaları ve onların meta verilerini (dosya adı, boyutu, ilgili ders vb.) takip etmek için SQLite3 tabanlı bir veritabanı kullanır. Bu veritabanı işlevselliği sayesinde, program daha önceden indirilmiş bir dosyanın farkında olabilir ve bu dosyanın tekrar indirilmesini engeller. Eğer belirli bir ders materyali daha önceden indirildiyse ve yerel diskte bu materyalin boyutu ile Sabis platformunda listelenen materyalin boyutu aynıysa, bu dosyanın tekrar indirilmesine gerek kalmaz. Bu, gereksiz indirmeleri önlemek ve daha hızlı bir kullanıcı deneyimi sunmak için kritiktir.
 
 ### Lisans
 
-Bu proje MIT lisansı altındadır - detaylar için LISANS dosyasına bakınız.
+Bu proje MIT lisansı altındadır - detaylar için [LİSANS](https://github.com/mytsx/SABIS-DERS-NOTU-INDIRME-ARACI/blob/main/LICENSE) dosyasına bakınız.
